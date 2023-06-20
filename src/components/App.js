@@ -1,5 +1,4 @@
 
-import "./styles.css";
 import { useState, useRef, useEffect } from "react";
 
 function LapTimer() {
@@ -11,11 +10,8 @@ function LapTimer() {
     if (!intervalRef.current) {
       intervalRef.current = setInterval(() => {
         setTime((time) => {
-          // console.log(time)
-          // console.log(prevTime)
-          return time+ 10
+          return time + 10
         });
-        console.log(intervalRef)
 
       }, 10);
     }
